@@ -1,0 +1,38 @@
+﻿git config --global user.name "eyngqin"
+git config --global user.email "yang.qin@ericsson.com"
+
+git config -l
+
+git status
+git add HelloWorld.java
+git add . 
+git commit -m "new file HelloWorld.java"
+git commit -a -m "new file HelloWorld.java"
+git log HelloWorld.java
+git log --pretty=oneline
+git log --pretty=oneline HelloWorld.java
+git checkout -- HelloWorld.java 恢复上一次提交
+git reset HEAD HelloWorld.java
+git reset --hard HEAD~100
+
+git reflog
+git reset --hard 65f212061d5839216f5db786bf7ae1047df218ed
+
+git diff HelloWorld.java
+del HelloWorld.java
+
+ssh-keygen -t rea -C "yang.qin@ericsson.com"
+
+git remote add origin https://github.com/eyngqin/mldn.git
+
+git push -u origin master
+
+git remote add test git@github.com:eyngqin/mldn.git
+git remote set-url origin https://github.com/eyngqin/mldn.git
+git remote rm test
+
+git commit -a -m "change one files"
+
+git push origin master
+
+git clone https://github.com/eyngqin/mldnback.git
